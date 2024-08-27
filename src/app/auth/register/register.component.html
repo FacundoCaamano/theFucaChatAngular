@@ -1,0 +1,19 @@
+<div class="formContainer">
+    <form [formGroup]="formRegister" class="formRegister">
+        <div>
+            <label for="username">Nombre de usuario</label>
+            <input formControlName="username" type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input formControlName="password" type="text" name="password">
+        </div>
+        <div>
+            <label for="password2">Repita su contraseña</label>
+            <input formControlName="passwordRepeat" type="text" name="password2">
+        </div>
+        <div >
+            <button class="buttonRegister" (click)="register()">Registrarse</button>
+        </div>
+    </form>
+</div>
